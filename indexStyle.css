@@ -1,114 +1,120 @@
 body {
-    background-color: rgb(39, 39, 39);
-    padding-bottom: 50vw;
-  }
+  background-color: rgb(39, 39, 39);
+  padding-bottom: 50vw;
+}
 
 h1 {
-    font-family: "Calibri";
-    font-size: 200px;
-    position: relative;
-    text-align: center;
-    color: white;
-    background: url("https://i.etsystatic.com/15011367/r/il/6e81bc/2260991376/il_fullxfull.2260991376_r6zl.jpg");
-    background-size: 20%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 3px black;
-    animation: pattern 20s ease-in-out 1s infinite;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
+  font-family: "Calibri";
+  font-size: 10vw;
+  position: relative;
+  text-align: center;
+  color: white;
+  background: url("https://i.etsystatic.com/15011367/r/il/6e81bc/2260991376/il_fullxfull.2260991376_r6zl.jpg");
+  background-size: 20%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.1vw black;
+  animation: pattern 20s ease-in-out 1s infinite;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
 
 .enterButton {
-    background-color: #ff5e00;
-    border: 3px solid;
-    border-radius: 10px;
-    border-color: black;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    width: 200px;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color:#ff5e00;
-    background: url("https://i.etsystatic.com/15011367/r/il/6e81bc/2260991376/il_fullxfull.2260991376_r6zl.jpg");
-    background-size: 100%;
-    animation: pattern 20s ease-in-out 1s infinite;
-  }
+  background-color: #ff5e00;
+  border: 0.1vw solid;
+  border-radius: 1vw;
+  border-color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 10vw;
+  margin: 0 auto;
+  margin-top: 5vw;
+  padding-top: 0.2vw;
+  padding-bottom: 0.2vw;
+  font-size: 2vw;
+  cursor: pointer;
+  background-color:#ff5e00;
+  background: url("https://i.etsystatic.com/15011367/r/il/6e81bc/2260991376/il_fullxfull.2260991376_r6zl.jpg");
+  background-size: 100%;
+  animation: pattern 20s ease-in-out 1s infinite;
+}
 
 .credits {
-    text-align: center;
-    font-size: 10px;
-    margin-top: 100px;
-  }
+  text-align: center;
+  font-size: 2vw;
+  margin-top: 5vw;
+}
 
 #clickButton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 0;
-    font-family: 'Calibri';
-    text-decoration: none;
-    font-weight: 900;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0;
+  font-family: 'Calibri';
+  text-decoration: none;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
 
 #homeLogo {
-    width: 50px;
-    height: auto;
-    margin-left: 10px;
-  }
+  width: 3vw;
+  height: auto;
+  margin-left: 1vw;
+}
 
 .enterButton:hover {
-    transform: scale(1.5);
-    transition: transform 0.23s ease-in;
-  }
+  transform: scale(1.5);
+  transition: transform 0.23s ease-in;
+}
 
 .enterButton:not(:hover) {
-    transform: scale(1);
-    transition: transform 0.23s ease-in;
-  }
+  transform: scale(1);
+  transition: transform 0.23s ease-in;
+}
 
 .bottom {
-    font-weight: 900;
-    font-size: 20px;
-    font-family: 'Calibri';
-    color: white;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+  font-weight: 900;
+  font-size: 1vw;
+  font-family: 'Calibri';
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 1vw;
+}
 
 #ghLogo, #gmailLogo {
-    width: 20px;
-    height: auto;
-    display: inline;
-    vertical-align: middle;
-    margin-left: 2px;
-  }
+  width: 1vw;
+  height: auto;
+  display: inline;
+  vertical-align: middle;
+  margin-left: 0.1vw;
+}
 
 #email, #ghUser {
-    text-decoration: none;
-    color: white;
-  }
+  text-decoration: none;
+  color: white;
+}
 
 #email:hover, #ghUser:hover {
-    color: grey;
-    transition: color 0.5s;
-  }
+  color: grey;
+  transition: color 0.5s;
+}
 
 #email:not(:hover), #ghUser:not(:hover) {
-    color: white;
-    transition: color 0.5s;
-  }
+  color: white;
+  transition: color 0.5s;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+}
 
 @keyframes pattern {
-    0%      {background-position: center 0;}
-    50%     {background-position: center 100%;}
-    100%    {background-position: center 0;}
-  }
+  0%      {background-position: center 0;}
+  50%     {background-position: center 100%;}
+  100%    {background-position: center 0;}
+}
