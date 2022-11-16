@@ -12,7 +12,7 @@ h1 {
     background-size: 20%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: pattern 15s linear infinite;
+    animation: pattern 15s ease-in reversePattern 15s ease-out;
     margin-bottom: 0px;
     margin-top: 0px;
   }
@@ -65,5 +65,14 @@ h1 {
     }
     to {
       background-position: center 100%;
+    }
+  }
+
+@keyframes reversePattern {
+    from {
+      background-position: center 100%;
+    }
+    to {
+      background-position: center 0;
     }
   }
