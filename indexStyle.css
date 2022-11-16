@@ -1,5 +1,8 @@
 body {
     background-color: rgb(39, 39, 39);
+    padding-bottom: 50vw;
+    position: fixed;
+    width: 100vw;
   }
 
 h1 {
