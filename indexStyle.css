@@ -12,10 +12,7 @@ h1 {
     background-size: 20%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation-name: pattern, reversePattern;
-    animation-duration: 5s, 5s;
-    animation-delay: 200ms, 200ms;
-    animation-timing-function: ease-in, ease-in;
+    animation: pattern 10s ease-in-out;
     margin-bottom: 0px;
     margin-top: 0px;
   }
@@ -64,18 +61,12 @@ h1 {
 
 @keyframes pattern {
     from {
-      background-position: center 0;
+        background-position: center 0;
     }
     to {
-      background-position: center 100%;
-    }
-  }
-
-@keyframes reversePattern {
-    from {
-      background-position: center 100%;
+        background-position: center 100%;
     }
     to {
-      background-position: center 0;
+        background-position: center 0;
     }
   }
