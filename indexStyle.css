@@ -8,11 +8,11 @@ h1 {
     position: relative;
     text-align: center;
     color: white;
-    background: url("https://i.imgur.com/T4pyV0k.png");
+    background: url("https://i.etsystatic.com/15011367/r/il/6e81bc/2260991376/il_fullxfull.2260991376_r6zl.jpg");
     background-size: 20%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: pattern 5s linear infinite;
+    animation: pattern 15s linear infinite;
     margin-bottom: 0px;
     margin-top: 0px;
   }
