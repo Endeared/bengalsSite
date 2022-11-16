@@ -12,7 +12,10 @@ h1 {
     background-size: 20%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: pattern 5s ease-in, reversePattern 5s ease-out;
+    animation-name: pattern, reversePattern;
+    animation-duration: 5s, 5s;
+    animation-delay: 200ms, 200ms;
+    animation-timing-function: ease-in, ease-in;
     margin-bottom: 0px;
     margin-top: 0px;
   }
