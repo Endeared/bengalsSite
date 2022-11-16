@@ -5,7 +5,7 @@ to do:
 
 
 home page / landing (index.html)
-    - contains splash screen / enter button
+    contains splash screen / enter button
 
 main page (mainPage.html)
     - contains navigation bar
