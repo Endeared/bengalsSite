@@ -30,7 +30,7 @@
 <style>
 
 body {
-  background-color: white;
+  background-color: rgb(39, 39, 39);
 }
 
 h1 {
@@ -43,7 +43,7 @@ h1 {
   background-size: 20%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: pattern 15s linear infinite;
+  animation: pattern 20s ease-in-out 1s infinite;
   margin-bottom: 0px;
   margin-top: 0px;
 }
@@ -64,6 +64,10 @@ h1 {
   padding-bottom: 5px;
   font-size: 16px;
   cursor: pointer;
+  background-color:#ff5e00;
+  background: url("https://i.etsystatic.com/15011367/r/il/6e81bc/2260991376/il_fullxfull.2260991376_r6zl.jpg");
+  background-size: 100%;
+  animation: pattern 20s ease-in-out 1s infinite;
 }
 
 .credits {
@@ -80,7 +84,7 @@ h1 {
   font-family: 'Calibri';
   text-decoration: none;
   font-weight: 900;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 30px;
 }
 
@@ -91,22 +95,76 @@ h1 {
 }
 
 @keyframes pattern {
-  from {
-    background-position: center 0;
+    0%      {background-position: center 0;}
+    50%     {background-position: center 100%;}
+    100%    {background-position: center 0;}
   }
-  to {
-    background-position: center 100%;
-  }
+
+ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.pages * {
+  color: rgb(255, 255, 255);
+  font-family: 'Calibri';
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.pages {
+  border-radius: 10px;
+  border: 5px solid;
+  border-color: black;
+  margin: 0 auto;
+  width: 70%;
+  padding-left: 0px;
+  padding-right: 0px;
+  left: 0px;
+  right: 0px;
+  background-color:#ff5e00;
+  background: url("https://i.etsystatic.com/15011367/r/il/6e81bc/2260991376/il_fullxfull.2260991376_r6zl.jpg");
+  background-size: 20%;
+  animation: pattern 20s ease-in-out 1s infinite;
+}
+
+.pages li {
+  padding-right: 100px;
+  padding-left: 100px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.hover:hover, .enterButton:hover {
+  transform: scale(1.5);
+  transition: transform 0.23s ease-in;
+}
+
+.hover:not(:hover), .enterButton:not(:hover) {
+  transform: scale(1);
+  transition: transform 0.23s ease-in;
+}
+
+.bottom {
+  font-weight: 900;
+  font-size: 20px;
+  font-family: 'Calibri';
+  color: white;
 }
 
 </style>
 
 <body>
 
-  <div class="title">
-    <h1>WELCOME TO</h1>
-    <h1>THE JUNGLE</h1>
-  </div>
+  <nav class="pages">
+    <ul>
+      <li class="hover" id="firstNav" id="link1"><a href="mainPage.html">HOME</a></li>
+      <li class="hover" id="link2"><a href="">RECENT</a></li>
+      <li class="hover" id="link3"><a href="">SCHEDULE</a></li>
+      <li class="hover" id="lastNav" id="link4"><a href="">ADVANCED STATS</a></li>
+    </ul>
+  </nav>
 
   <div class="enterButton">
     <a href="mainPage.html" id="clickButton">
@@ -116,10 +174,10 @@ h1 {
 
 
   <footer class="credits">
-    <p>
+    <p class="bottom">
       Webite created & formatted by Ross Hamey. GitHub - @Endeared. 11/15/2022. rosshamey@gmail.com
     </p>
-    <p>
+    <p class="bottom">
       All statistics & results provided by ESPN.
     </p>
   </footer>
