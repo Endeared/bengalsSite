@@ -9,7 +9,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="Bengals Website">
     <meta name="author" content="Ross Hamey">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
 
 <code>
 <!-- You can use this for code later, such as y = x + z. -->
@@ -31,6 +31,7 @@
 
 body {
   background-color: rgb(39, 39, 39);
+  padding-bottom: 50vw;
 }
 
 h1 {
@@ -144,43 +145,53 @@ img {
   height: auto;
 }
 
-.prSlot {
+.prSlot, .bengals {
   text-align: center;
   width: 20vw;
-  height: 3.3vw;
+  height: 3.5vw;
   font-size: 1vw;
-  margin-top: 0.2vw;
+  margin-top: 0.5vw;
+  margin-left: 3vw;
   background-color: white;
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 0.2vw solid;
+  border-right: 0.5vw solid;
+  border-left: 0.5vw solid;
   border-top-right-radius: 10vw;
   border-bottom-right-radius: 10vw;
   border-color: black;
   overflow: hidden;
 }
 
-#rank1 {
-  margin-top: 3vw;
+.bengals {
+  width: 22vw;
+  border-top-left-radius: 10vw;
+  border-bottom-left-radius: 10vw;
 }
 
-.sideColor {
+.powerRankingsSection, .middleSection {
+  margin-top: 1vw;
+}
+
+.sideColor, .sideColor2 {
   height: 10vw;
   width: 2vw;
   overflow: hidden;
 }
 
-.prSlot ul * {
-  font-family: 'Calibri';
-  font-weight: 900;
+.sideColor2 {
+  margin-right: -50vw;
+  margin-left: 1.8vw;
 }
 
-.prSlot ul {
+.prSlot ul, .bengals ul {
   margin-right: 0.5vw;
   margin-left: 0;
   text-decoration: none;
   list-style: none;
+  font-family: 'Calibri';
+  font-weight: 900;
 }
 
 .secondCol {
@@ -191,8 +202,13 @@ img {
   padding-bottom: 1vw;
 }
 
-.firstCol {
+.firstCol, .change {
   font-size: 0.7vw;
+}
+
+.record, .rankWord {
+  font-size: 0.7vw;
+  color: gray;
 }
 
 .teamLogo {
@@ -200,24 +216,21 @@ img {
   width: auto;
 }
 
-.rankWord {
-  font-size: 0.7vw;
-  color: grey;
-}
-
 .rank {
   font-size: 1.2vw;
 }
 
-.change {
-  font-size: 0.7vw;
+.powerRankingsSection, .middleSection, .rightSection {
+  float: left;
+  width: 33.33%;
 }
 
-.record {
-  font-size: 0.7vw;
-  color: gray;
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 0vw;
 }
-
 
 
 </style>
@@ -233,46 +246,173 @@ img {
     </ul>
   </nav>
 
-  <div class="prSlot" id="rank1">
-    <div class="sideColor" style="background-color: #004C54;"></div>
-    <ul class="firstCol">
-      <li class="rankWord">Rank</li>
-      <li class="rank">1</li>
-      <li class="change" style="color: grey;">N</li>
-    </ul>
-    <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/PHI">
-    <ul class="secondCol">
-      <li class="teamName">Philadelphia Eagles</li>
-      <li class="record">8-1</li>
-    </ul>
+  <div class="powerRankingsSection">
+    <div class="prSlot" id="rank1">
+      <div class="sideColor" style="background-color: #004C54;"></div>
+      <ul class="firstCol">
+        <li class="rankWord">Rank</li>
+        <li class="rank">1</li>
+        <li class="change" style="color: grey;">N</li>
+      </ul>
+      <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/PHI">
+      <ul class="secondCol">
+        <li class="teamName">Philadelphia Eagles</li>
+        <li class="record">8-1</li>
+      </ul>
+    </div>
+
+    <div class="prSlot">
+      <div class="sideColor" style="background-color:#E31837;"></div>
+      <ul class="firstCol">
+        <li class="rankWord">Rank</li>
+        <li class="rank">2</li>
+        <li class="change" style="color: green">+1</li>
+      </ul>
+      <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/KC">
+      <ul class="secondCol">
+        <li class="teamName">Kansas City Chiefs</li>
+        <li class="record">7-2</li>
+      </ul>
+    </div>
+
+    <div class="prSlot">
+      <div class="sideColor" style="background-color:#4F2683;"></div>
+      <ul class="firstCol">
+        <li class="rankWord">Rank</li>
+        <li class="rank">3</li>
+        <li class="change" style="color: green;">+4</li>
+      </ul>
+      <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/MIN">
+      <ul class="secondCol">
+        <li class="teamName">Minnesota Vikings</li>
+        <li class="record">8-1</li>
+      </ul>
+    </div>
+
+    <div class="prSlot">
+      <div class="sideColor" style="background-color:#008E97;"></div>
+      <ul class="firstCol">
+        <li class="rankWord">Rank</li>
+        <li class="rank">4</li>
+        <li class="change" style="color: green;">+8</li>
+      </ul>
+      <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/MIA">
+      <ul class="secondCol">
+        <li class="teamName">Miami Dolphins</li>
+        <li class="record">7-3</li>
+      </ul>
+    </div>
+
+    <div class="prSlot">
+      <div class="sideColor" style="background-color:#00338D;"></div>
+      <ul class="firstCol">
+        <li class="rankWord">Rank</li>
+        <li class="rank">5</li>
+        <li class="change" style="color: red;">-3</li>
+      </ul>
+      <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/BUF">
+      <ul class="secondCol">
+        <li class="teamName">Buffalo Bills</li>
+        <li class="record">6-3</li>
+      </ul>
+    </div>
+
+    <div class="prSlot">
+      <div class="sideColor" style="background-color:#241773;"></div>
+      <ul class="firstCol">
+        <li class="rankWord">Rank</li>
+        <li class="rank">6</li>
+        <li class="change" style="color: red;">-1</li>
+      </ul>
+      <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/BAL">
+      <ul class="secondCol">
+        <li class="teamName">Baltimore Ravens</li>
+        <li class="record">6-3</li>
+      </ul>
+    </div>
+
+    <div class="prSlot">
+      <div class="sideColor" style="background-color:#AA0000;"></div>
+      <ul class="firstCol">
+        <li class="rankWord">Rank</li>
+        <li class="rank">7</li>
+        <li class="change" style="color: red;">-1</li>
+      </ul>
+      <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/SF">
+      <ul class="secondCol">
+        <li class="teamName">San Francisco 49ers</li>
+        <li class="record">5-4</li>
+      </ul>
+    </div>
+
+    <div class="prSlot">
+      <div class="sideColor" style="background-color:#002244;"></div>
+      <ul class="firstCol">
+        <li class="rankWord">Rank</li>
+        <li class="rank">8</li>
+        <li class="change" style="color: red;">-4</li>
+      </ul>
+      <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/DAL">
+      <ul class="secondCol">
+        <li class="teamName">Dallas Cowboys</li>
+        <li class="record">6-3</li>
+      </ul>
+    </div>
+
+    <div class="prSlot">
+      <div class="sideColor" style="background-color:#002244;"></div>
+      <ul class="firstCol">
+        <li class="rankWord">Rank</li>
+        <li class="rank">9</li>
+        <li class="change" style="color: red;">-1</li>
+      </ul>
+      <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/TEN">
+      <ul class="secondCol">
+        <li class="teamName">Tennessee Titans</li>
+        <li class="record">6-3</li>
+      </ul>
+    </div>
+
+    <div class="prSlot">
+      <div class="sideColor" style="background-color:#003F2D;"></div>
+      <ul class="firstCol">
+        <li class="rankWord">Rank</li>
+        <li class="rank">10</li>
+        <li class="change" style="color: red;">-1</li>
+      </ul>
+      <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/NYJ">
+      <ul class="secondCol">
+        <li class="teamName">New York Jets</li>
+        <li class="record">6-3</li>
+      </ul>
+    </div>
   </div>
 
-  <div class="prSlot">
-    <div class="sideColor" style="background-color:#E31837;"></div>
-    <ul class="firstCol">
-      <li class="rankWord">Rank</li>
-      <li class="rank">2</li>
-      <li class="change" style="color: green">+1</li>
-    </ul>
-    <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/KC">
-    <ul class="secondCol">
-      <li class="teamName">Kansas City Chiefs</li>
-      <li class="record">7-2</li>
-    </ul>
+
+
+  <div class="middleSection">
+
+    <div class="bengals">
+      <div class="sideColor" style="background-color:#FB4F14;"></div>
+      <ul class="firstCol">
+        <li class="rankWord">Rank</li>
+        <li class="rank">11</li>
+        <li class="change" style="color: grey;">N</li>
+      </ul>
+      <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
+      <ul class="secondCol">
+        <li class="teamName">Cincinnati Bengals</li>
+        <li class="record">5-4</li>
+      </ul>
+      <div class="sideColor2" style="background-color:#FB4F14;"></div>
+    </div>
+
   </div>
 
-  <div class="prSlot">
-    <div class="sideColor" style="background-color:#4F2683;"></div>
-    <ul class="firstCol">
-      <li class="rankWord">Rank</li>
-      <li class="rank">3</li>
-      <li class="change" style="color: green;">+4</li>
-    </ul>
-    <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/MIN">
-    <ul class="secondCol">
-      <li class="teamName">Minnesota Vikings</li>
-      <li class="record">8-1</li>
-    </ul>
+
+
+  <div class="rightSection">
+
   </div>
 
 
