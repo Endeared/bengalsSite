@@ -14,8 +14,12 @@
 + ~~contains current conf standing~~
 
 ### most recent game (weekInReview.html) - ***IN PROGRESS***
-+ contains score of last game
-+ contains some minor details of stats (qb stats, rb stats, best wr stats, defensive mvp, quarter breakdowns)
++ ~~~contains score section of last game~~~
++ ~~~contains info of both teams~~~
++ contains individual stats for players on both teams (qb / rb / best wr / best defensive player / k)
++ totals of individual stats
++ quarter by quarter breakdown of score
++ attendance
 
 ### schedule (schedule.html) - ***NOT STARTED***
 + contains past games (with dropdowns for scores / stats)
