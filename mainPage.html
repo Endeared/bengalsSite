@@ -20,6 +20,7 @@ body {
   padding-bottom: 50vw;
   position: absolute;
   width: 100vw;
+  overflow: hidden;
 }
 
 h1 {
@@ -212,32 +213,109 @@ img {
   display: inline-block;
   position: absolute;
   width: 100%;
+  overflow: hidden;
+  background-color: none;
 }
 
 .powerRankingsSection {
   float: left;
   width: 33.33%;
+  background-color: none;
+}
+
+.powerRankingsSection .prSlot {
+  margin-left: 30%;
+}
+
+.prHeader {
   text-align: center;
+  margin-left: 40%;
+  padding-left: 43%;
+  margin-bottom: 2.3%;
+  margin-right: 20%;
+  padding: 0;
+}
+
+.confHeader {
+  text-align: center;
+  margin-right: 37%;
+  margin-left: 14%;
+  margin-bottom: 0.8%;
+}
+
+.standingHeader {
+  text-align: center;
+  margin-bottom: 2.3%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.prHeader, .confHeader, .standingHeader {
+  font-family: 'Calibri';
+  font-weight: 900;
+  background-color: white;
+  border: .2vw solid;
+  border-color: black;
+  border-radius: 1vw;
+}
+
+.fillerOne, .fillerTwo {
+  width: 10%;
 }
 
 .middleSection {
   width: 33.33%;
-  text-align: center;
-  position: relative;
   float: left;
-  left: calc(5.5%);
+  background-color: none;
+}
+
+.middleSection .bengals {
+  margin-left: 20%;
 }
 
 .rightSection {
-  float: right;
+  float: left;
   text-align: center;
   width: 33.33%;
+  background-color: none;
 }
 
 .rightSection .prSlot {
-  float: right;
+  float: left;
   text-align: center;
-  margin-right: 3vw;
+  margin-right: 30%;
+  padding-right: 0;
+}
+
+.leagueLogo {
+  text-align: end;
+  position: absolute;
+  margin-left: 2.33%;
+  width: 1.5%;
+  height: auto;
+}
+
+.nflPrQuote {
+  text-align: center;
+  font-family: 'Calibri';
+  color:grey;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.5vw;
+}
+
+#quoteCaption {
+  text-align: center;
+  font-family: 'Calibri';
+  color:grey;
+  font-weight: 900;
+  padding-top: 3vw;
+  padding-bottom: 1vw;
+  font-size: 1vw;
+}
+
+.weekHighlights {
+  text-align: center;
 }
 
 
@@ -256,11 +334,15 @@ img {
   </nav>
 
 
-  <div class="mainBody">
+  <section class="mainBody">
 
     <div class="powerRankingsSection">
+
+      <div class="prHeader">POWER RANKINGS - WEEK 11</div>
+
       <div class="prSlot" id="rank1">
         <div class="sideColor" style="background-color: #004C54;"></div>
+        <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/National_Football_Conference_logo.svg/1200px-National_Football_Conference_logo.svg.png">
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
           <li class="rank">1</li>
@@ -275,6 +357,7 @@ img {
 
       <div class="prSlot">
         <div class="sideColor" style="background-color:#E31837;"></div>
+        <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png">
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
           <li class="rank">2</li>
@@ -289,6 +372,7 @@ img {
 
       <div class="prSlot">
         <div class="sideColor" style="background-color:#4F2683;"></div>
+        <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/National_Football_Conference_logo.svg/1200px-National_Football_Conference_logo.svg.png">
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
           <li class="rank">3</li>
@@ -303,6 +387,7 @@ img {
 
       <div class="prSlot">
         <div class="sideColor" style="background-color:#008E97;"></div>
+        <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png">
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
           <li class="rank">4</li>
@@ -317,6 +402,7 @@ img {
 
       <div class="prSlot">
         <div class="sideColor" style="background-color:#00338D;"></div>
+        <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png">
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
           <li class="rank">5</li>
@@ -331,6 +417,7 @@ img {
 
       <div class="prSlot">
         <div class="sideColor" style="background-color:#241773;"></div>
+        <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png">
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
           <li class="rank">6</li>
@@ -345,6 +432,7 @@ img {
 
       <div class="prSlot">
         <div class="sideColor" style="background-color:#AA0000;"></div>
+        <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/National_Football_Conference_logo.svg/1200px-National_Football_Conference_logo.svg.png">
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
           <li class="rank">7</li>
@@ -359,6 +447,7 @@ img {
 
       <div class="prSlot">
         <div class="sideColor" style="background-color:#002244;"></div>
+        <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/National_Football_Conference_logo.svg/1200px-National_Football_Conference_logo.svg.png">
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
           <li class="rank">8</li>
@@ -373,6 +462,7 @@ img {
 
       <div class="prSlot">
         <div class="sideColor" style="background-color:#002244;"></div>
+        <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png">
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
           <li class="rank">9</li>
@@ -387,6 +477,7 @@ img {
 
       <div class="prSlot">
         <div class="sideColor" style="background-color:#003F2D;"></div>
+        <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png">
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
           <li class="rank">10</li>
@@ -404,8 +495,11 @@ img {
 
     <div class="middleSection">
 
+      <div class="standingHeader">CURRENT POWER RANKING - WEEK 11</div>
+
       <div class="bengals">
         <div class="sideColor" style="background-color:#FB4F14;"></div>
+        <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png">
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
           <li class="rank">11</li>
@@ -418,18 +512,29 @@ img {
         </ul>
       </div>
 
+      <div class="weeklyQuote">
+        <p id="quoteCaption">From NFL.com's Week 11 Power Rankings entry on the Bengals:</p>
+        <blockquote class="nflPrQuote">"The Bengals had a bye week to further savor the long-awaited breakout performance from Joe Mixon, who set a franchise record with five touchdowns (to go along with 211 yards from scrimmage) in a blowout win over the Panthers in Week 9. Mixon entered the big day as one of the league’s least efficient runners: According to Next Gen Stats, Mixon rushed for 54 yards below expectation through the first eight weeks of the season – the third-worst figure of any running back with at least 50 carries. Against Carolina, Mixon rushed for 74 yards above expectation. With Ja’Marr Chase sidelined indefinitely by a hip injury, the Bengals need the dynamic version of Mixon to stick around."</blockquote>
+      </div>
+
+      <div class="weekHighlights">
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/AqcDaWDx_qc?controls=0" allowfullscreen></iframe>
+      </div>
+
     </div>
 
 
 
     <div class="rightSection">
 
+      <div class="confHeader">AFC NORTH STANDINGS - WEEK 11</div>
+
       <div class="prSlot">
         <div class="sideColor" style="background-color:#241773;"></div>
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
-          <li class="rank">6</li>
-          <li class="change" style="color: red;">-1</li>
+          <li class="rank">1</li>
+          <li class="change" style="color: grey;">N</li>
         </ul>
         <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/BAL">
         <ul class="secondCol">
@@ -439,50 +544,50 @@ img {
       </div>
 
       <div class="prSlot">
-        <div class="sideColor" style="background-color:#241773;"></div>
+        <div class="sideColor" style="background-color:#FB4F14;"></div>
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
-          <li class="rank">6</li>
-          <li class="change" style="color: red;">-1</li>
+          <li class="rank">2</li>
+          <li class="change" style="color: grey;">N</li>
         </ul>
-        <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/BAL">
+        <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
         <ul class="secondCol">
-          <li class="teamName">Baltimore Ravens</li>
-          <li class="record">6-3</li>
+          <li class="teamName">Cincinnati Bengals</li>
+          <li class="record">5-4</li>
         </ul>
       </div>
 
       <div class="prSlot">
-        <div class="sideColor" style="background-color:#241773;"></div>
+        <div class="sideColor" style="background-color:#FF3C00;"></div>
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
-          <li class="rank">6</li>
-          <li class="change" style="color: red;">-1</li>
+          <li class="rank">3</li>
+          <li class="change" style="color: grey;">N</li>
         </ul>
-        <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/BAL">
+        <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CLE">
         <ul class="secondCol">
-          <li class="teamName">Baltimore Ravens</li>
-          <li class="record">6-3</li>
+          <li class="teamName">Cleveland Browns</li>
+          <li class="record">3-6</li>
         </ul>
       </div>
 
       <div class="prSlot">
-        <div class="sideColor" style="background-color:#241773;"></div>
+        <div class="sideColor" style="background-color:#000000;"></div>
         <ul class="firstCol">
           <li class="rankWord">Rank</li>
-          <li class="rank">6</li>
-          <li class="change" style="color: red;">-1</li>
+          <li class="rank">4</li>
+          <li class="change" style="color: grey;">N</li>
         </ul>
-        <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/BAL">
+        <img class="teamLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/PIT">
         <ul class="secondCol">
-          <li class="teamName">Baltimore Ravens</li>
-          <li class="record">6-3</li>
+          <li class="teamName">Pittsburgh Steelers</li>
+          <li class="record">3-6</li>
         </ul>
       </div>
 
     </div>
 
-  </div>
+  </section>
 
 
 
