@@ -7,13 +7,13 @@
 ### ~~home page / landing (index.html)~~ - ***DONE***
 + ~~contains splash screen / enter button~~
 
-### main page (mainPage.html) - ***IN PROGRESS***
+### ~~main page (mainPage.html)~~ - ***DONE***
 + ~~contains navigation bar~~
-+ contains headline / recent news regarding bengals
++ ~~contains headline / recent news regarding bengals~~
 + ~~contains current power ranking~~
 + ~~contains current conf standing~~
 
-### most recent game (weekInReview.html) - ***NOT STARTED***
+### most recent game (weekInReview.html) - ***IN PROGRESS***
 + contains score of last game
 + contains some minor details of stats (qb stats, rb stats, best wr stats, defensive mvp, quarter breakdowns)
 
