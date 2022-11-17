@@ -301,7 +301,7 @@ img {
   color:grey;
   font-style: italic;
   font-weight: 400;
-  line-height: 1.5vw;
+  line-height: 1.1vw;
 }
 
 #quoteCaption {
@@ -309,13 +309,41 @@ img {
   font-family: 'Calibri';
   color:grey;
   font-weight: 900;
-  padding-top: 3vw;
+  padding-top: 1vw;
   padding-bottom: 1vw;
   font-size: 1vw;
 }
 
 .weekHighlights {
   text-align: center;
+  padding-top: 1vw;
+  border-collapse: collapse;
+}
+
+#highlightVideo {
+  border: .2vw solid;
+  border-color: black;
+  border-radius: 2vw;
+  border-collapse: collapse;
+}
+
+#highlightTitle {
+  padding-top: 2vw;
+  text-align: center;
+  font-family: 'Calibri';
+  background-color: white;
+  color:rgb(0, 0, 0);
+  font-weight: 900;
+  margin-bottom: 0;
+  border: .2vw solid;
+  border-bottom: 0;
+  border-color: black;
+  border-top-right-radius: 1vw;
+  border-top-left-radius: 1vw;
+  margin: 0;
+  padding: 0;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
 
@@ -518,7 +546,9 @@ img {
       </div>
 
       <div class="weekHighlights">
-        <iframe width="480" height="270" src="https://www.youtube.com/embed/AqcDaWDx_qc?controls=0" allowfullscreen></iframe>
+        <p id="highlightTitle">WEEK 9 HIGHLIGHTS - PANTHERS @ BENGALS</p>
+        <iframe id="highlightVideo" width="480" height="270" src="https://drive.google.com/file/d/1FURygTo3vg7H2uOm6mvlAmHfMjUNCYh8/preview?controls=0" allowfullscreen>
+        </iframe>
       </div>
 
     </div>
