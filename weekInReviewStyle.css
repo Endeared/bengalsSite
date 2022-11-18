@@ -1,0 +1,488 @@
+body {
+    background-color: rgb(39, 39, 39);
+    padding-bottom: 50vw;
+    position: absolute;
+    width: 100vw;
+}
+
+h1 {
+    font-family: "Calibri";
+    font-size: 10vw;
+    position: relative;
+    text-align: center;
+    color: white;
+    background: url("https://i.etsystatic.com/15011367/r/il/6e81bc/2260991376/il_fullxfull.2260991376_r6zl.jpg");
+    background-size: 20%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pattern 20s ease-in-out 1s infinite;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
+}
+
+.credits {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 5vw;
+}
+
+@keyframes pattern {
+    0% {
+        background-position: center 0;
+    }
+
+    50% {
+        background-position: center 100%;
+    }
+
+    100% {
+        background-position: center 0;
+    }
+}
+
+.pages ul {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.pages * {
+    color: rgb(255, 255, 255);
+    font-family: 'Calibri';
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.pages {
+    border-radius: 1vw;
+    border: 0.2vw solid;
+    border-color: black;
+    margin: 0 auto;
+    width: 65vw;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    left: 0vw;
+    right: 0vw;
+    background-color: #ff5e00;
+    background: url("https://i.etsystatic.com/15011367/r/il/6e81bc/2260991376/il_fullxfull.2260991376_r6zl.jpg");
+    background-size: 20%;
+    animation: pattern 20s ease-in-out 1s infinite;
+}
+
+.pages li {
+    padding-right: 5vw;
+    padding-left: 5vw;
+    font-size: 1vw;
+    font-weight: 900;
+}
+
+.hover:hover {
+    transform: scale(1.5);
+    transition: transform 0.23s ease-in;
+}
+
+.hover:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.23s ease-in;
+}
+
+.bottom {
+    font-weight: 900;
+    font-size: 1vw;
+    font-family: 'Calibri';
+    color: white;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    margin-right: 1vw;
+}
+
+#ghLogo,
+#gmailLogo {
+    width: 1vw;
+    height: auto;
+    display: inline;
+    vertical-align: middle;
+    margin-left: 0.1vw;
+}
+
+#email,
+#ghUser {
+    text-decoration: none;
+    color: white;
+}
+
+#email:hover,
+#ghUser:hover {
+    color: grey;
+    transition: color 0.5s;
+}
+
+#email:not(:hover),
+#ghUser:not(:hover) {
+    color: white;
+    transition: color 0.5s;
+}
+
+footer {
+    position: absolute;
+    width: 100vw;
+    bottom: 0vw;
+    height: 0vw;
+}
+
+img {
+    width: 2vw;
+    height: auto;
+}
+
+.prSlot,
+.bengals {
+    text-align: center;
+    width: 60%;
+    height: 3.5vw;
+    font-size: 1vw;
+    margin-top: 0.5vw;
+    margin-left: 3vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: 0.5vw solid;
+    border-top-right-radius: 10vw;
+    border-bottom-right-radius: 10vw;
+    border-color: black;
+    overflow: hidden;
+}
+
+.bengals {
+    width: 60%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.leftSection,
+.middleSection,
+.rightSection {
+    margin-top: 1vw;
+}
+
+.sideColor,
+.sideColor2 {
+    height: 10vw;
+    width: 2vw;
+    overflow: hidden;
+}
+
+.prSlot ul,
+.bengals ul {
+    margin-right: 0.5vw;
+    margin-left: 0vw;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Calibri';
+    font-weight: 900;
+}
+
+.secondCol {
+    vertical-align: middle;
+    text-align: left;
+    margin-left: 0vw;
+    padding-left: 0.2vw;
+}
+
+.firstCol,
+.change {
+    font-size: 0.7vw;
+}
+
+.record,
+.rankWord {
+    font-size: 0.7vw;
+    color: gray;
+}
+
+.teamLogo {
+    height: 4vw;
+    width: auto;
+}
+
+.rank {
+    font-size: 1.2vw;
+}
+
+.mainBody {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    background-color: none;
+    font-family: 'Calibri'
+}
+
+.leftSection {
+    float: left;
+    width: 30%;
+    background-color: red transparent;
+}
+
+.bengalsMVPS {
+    vertical-align: bottom;
+    float: left;
+    width: 19%;
+    height: 29.8vw;
+    background-color: green transparent;
+    position: absolute;
+    left: 18%;
+    top: 18vw;
+    padding-top: 0.5vw;
+}
+
+
+.awayMVPS {
+    vertical-align: bottom;
+    float: right;
+    width: 19%;
+    height: 29.8vw;
+    background-color: green transparent;
+    position: absolute;
+    top: 18vw;
+    right: 18%;
+    padding-top: 0.5vw;
+}
+
+.playerTable {
+    margin-top: 1.8vw;
+    text-align: center;
+    overflow: hidden;
+    table-layout: auto;
+    width: 20%;
+    position: absolute;
+}
+
+.playerTable td, .playerTable th {
+    padding-left: 0.3vw;
+    padding-right: 0.1vw;
+    font-size: 80%;
+}
+
+.visual {
+    background-color:blue transparent;
+    width: 35%;
+    padding-left: 0.2vw;
+}
+
+.playerInfo {
+    background-color: red transparent;
+    width: 50%;
+    padding-left: 0.5vw;
+    margin-right: 0;
+    padding-right: 0;
+    padding-right: 0;
+}
+
+.playerInfoOpp {
+    background-color: red transparent;
+    width: 50%;
+    text-align: end;
+    padding-right: 0.5vw;
+    margin-left: 0;
+    padding-left: 0;
+    padding-left: 0;
+}
+
+.playerName {
+    padding-top: 35%;
+    font-size: 0.6vw;
+    font-weight: 900;
+    font-family: 'Calibri';
+}
+
+.playerPosNum {
+    font-size: 0.7vw;
+    font-weight: 900;
+    font-family: 'Calibri';
+    color: rgb(124, 124, 124);
+}
+
+.passingMVPb, .rushingMVPb, .receivingMVPb, .defensiveMVPb, .kickingMVPb {
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+.playerLogoB, .playerLogoO {
+    border: .2vw solid black;
+    border-radius: 100%;
+    border-collapse: collapse;
+    margin-top: 1.2vw;
+    width: 80%;
+}
+
+.playerLogoB {
+    box-shadow: 0px 0px 5px #FB4F14;
+}
+
+.playerLogoO {
+    box-shadow: 0px 0px 5px #0085CA;
+}
+
+.gameStats {
+    height: 6vw;
+    width: 15vw;
+    background-color: white transparent;
+}
+
+.gameStats * {
+    font-family: 'Calibri';
+    font-weight: 900;
+}
+
+
+.middleSection {
+    width: 40%;
+    float: left;
+    background-color: none;
+    text-align: center;
+    background-color: pink transparent;
+}
+
+
+.homeScores, .quarters, .awayScores {
+    margin-top: 5%;
+    line-height: 277%;
+    font-weight: 900;
+    font-size: 2.2vw;
+}
+
+.homeScores {
+    width: 10%;
+    float: left;
+    background-color: red transparent;
+}
+
+.quarters {
+    width: 20%;
+    float: left;
+    background-color: yellow transparent;
+}
+
+.awayScores {
+    width: 10%;
+    float: right;
+    background-color: blue transparent;
+}
+
+#attendance {
+    color: grey;
+    font-size: 1.5vw;
+    line-height: 150%;
+}
+
+#attendanceTag {
+    color: grey;
+    font-size: 0.7vw;
+    line-height: 0;
+    padding-top: 12%;
+}
+
+.attend {
+    padding-top: 1.4vw;
+}
+
+#scoreTotalSub {
+    line-height: 277%;
+    padding-bottom: 0;
+}
+
+.scoreSection {
+    font-weight: 900;
+    font-size: 4vw;
+}
+
+.rightSection {
+    float: left;
+    text-align: center;
+    width: 30%;
+    background-color: blue transparent;
+}
+
+.bengalsRec {
+    width: 30%;
+    float: left;
+}
+
+.opponentRec {
+    width: 30%;
+    float: right;
+}
+
+.bengalsRec ul, .opponentRec ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+.scoreSection {
+    width: 38%;
+    float: left;
+    margin-top: 3%;
+    box-shadow: 0px 0px 30px green;
+    border-radius: 3vw;
+    border: .3vw solid black;
+}
+
+.homeStats {
+    float: left;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 8%;
+    padding-left: 2%;
+}
+
+.awayStats {
+    float: right;
+    text-align: right;
+    padding-top: 8%;
+    padding-right: 2%;
+}
+
+.homeStats, .awayStats {
+    font-weight: 900;
+    color: black;
+    line-height: 120%;
+}
+
+.bengalsLogo, .panthersLogo {
+    transform: scale(3);
+    margin-bottom: 10%;
+    margin-top: 10%;
+    border: .15vw solid black;
+    height: 2vw;
+    width: 2vw;
+    border-radius: 150%;
+}
+
+.bengalsLogo {
+    float: right;
+    box-shadow: 0px 0px 5px #FB4F14;
+    margin-right: 10%;
+}
+
+.panthersLogo {
+    float: left;
+    box-shadow: 0px 0px 5px #0085CA;
+    margin-left: 10%;
+}
+
+.gameTitle {
+    text-align: center;
+    margin-top: 2%;
+    border: .15vw solid black;
+    border-radius: 1vw;
+    box-shadow: 0px 0px 10px rgb(135, 135, 135);
+    width: 50%;
+    margin-left: 25%;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    font-weight: 900;
+    font-size: 1.5vw;
+}
