@@ -152,221 +152,158 @@ img {
     height: auto;
 }
 
-.prSlot,
-.bengals {
-    text-align: center;
-    width: 60%;
-    height: 3.5vw;
-    font-size: 1vw;
-    margin-top: 0.5vw;
-    margin-left: 3vw;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-right: 0.5vw solid;
-    border-top-right-radius: 10vw;
-    border-bottom-right-radius: 10vw;
-    border-color: black;
-    overflow: hidden;
-}
-
-.bengals {
-    width: 60%;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.powerRankingsSection,
-.middleSection,
-.rightSection {
-    margin-top: 1vw;
-}
-
-.sideColor,
-.sideColor2 {
-    height: 10vw;
-    width: 2vw;
-    overflow: hidden;
-}
-
-.prSlot ul,
-.bengals ul {
-    margin-right: 0.5vw;
-    margin-left: 0vw;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Calibri';
-    font-weight: 900;
-}
-
-.secondCol {
-    vertical-align: middle;
-    text-align: left;
-    margin-left: 0vw;
-    padding-left: 0.2vw;
-}
-
-.firstCol,
-.change {
-    font-size: 0.7vw;
-}
-
-.record,
-.rankWord {
-    font-size: 0.7vw;
-    color: gray;
-}
-
-.teamLogo {
-    height: 4vw;
-    width: auto;
-}
-
-.rank {
-    font-size: 1.2vw;
-}
-
 .mainBody {
     display: inline-block;
-    position: absolute;
     width: 100%;
     overflow: hidden;
     background-color: none;
+    font-family: 'Calibri'
 }
 
-.powerRankingsSection {
+.upcomingGame {
+    background-color: rgb(255, 255, 255);
+    margin-top: 2%;
+    margin-bottom: 25%;
+}
+
+.bengalsInfo img {
     float: left;
-    width: 33.33%;
-    background-color: none;
+    height: 5vw;
+    width: auto;
 }
 
-.powerRankingsSection .prSlot {
-    margin-left: 30%;
+.opponentInfo img {
+    float: right;
+    height: 5vw;
+    width: auto;
 }
 
-.prHeader {
-    text-align: center;
-    margin-left: 40%;
-    padding-left: 43%;
-    margin-bottom: 2.3%;
-    margin-right: 20%;
-    padding: 0;
+.sideColorHome {
+    width: 2vw;
+    height: 5vw;
+    float: left;
+    box-shadow: 0px 0px 10px 3px #FB4F14;
 }
 
-.confHeader {
-    text-align: center;
-    margin-right: 37%;
-    margin-left: 14%;
-    margin-bottom: 0.8%;
+.sideColorAway {
+    width: 2vw;
+    height: 5vw;
+    float: right;
+    box-shadow: 0px 0px 10px 3px #000000;
 }
 
-.standingHeader {
-    text-align: center;
-    margin-bottom: 2.3%;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
-.prHeader,
-.confHeader,
-.standingHeader {
-    font-family: 'Calibri';
-    font-weight: 900;
+.bengalsInfo {
     background-color: white;
-    border: .2vw solid;
-    border-color: black;
-    border-radius: 1vw;
-}
-
-.fillerOne,
-.fillerTwo {
-    width: 10%;
-}
-
-.middleSection {
-    width: 33.33%;
     float: left;
-    background-color: none;
+    width: 25%;
+    margin-left: 15%;
+    border-spacing: 0;
 }
 
-.middleSection .bengals {
-    margin-left: 20%;
+.opponentInfo {
+    border-spacing: 0;
 }
 
-.rightSection {
-    float: left;
+.bengalsInfo ul *, .opponentInfo ul * {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.neutralInfo ul * {
+    list-style: none;
+    text-decoration: none;
+    color: black;
     text-align: center;
-    width: 33.33%;
-    background-color: none;
+    font-weight: 900;
+    margin-right: 10%;
 }
 
-.rightSection .prSlot {
-    float: left;
-    text-align: center;
-    margin-right: 30%;
-    padding-right: 0;
+.indicator {
+    font-size: 0.7vw;
 }
 
-.leagueLogo {
-    text-align: end;
-    position: absolute;
-    margin-left: 2.33%;
-    width: 1.5%;
+.homeTeam, .awayTeam {
+    font-size: 1.02vw;
+}
+
+.league img, .leagueOpp img {
+    width: 1.5vw;
     height: auto;
 }
 
-.nflPrQuote {
-    text-align: center;
+.powerRank, .powerRankOpp {
+    font-weight: 900;
     font-family: 'Calibri';
-    color: grey;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 1.1vw;
+    font-size: 0.7vw;
+    color: black;
 }
 
-#quoteCaption {
-    text-align: center;
-    font-family: 'Calibri';
-    color: grey;
+.record, .recordOpp {
     font-weight: 900;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    font-family: 'Calibri';
+    font-size: 0.7vw;
+    color: grey;
+}
+
+.recordOpp, .powerRankOpp, .leagueOpp {
+    text-align: right;
+    float: right;
+}
+
+
+.bengalsInfo *, .opponentInfo * {
+    display: flex;
+    flex-direction: column;
+}
+
+.bengalsRec, .awaysRec {
+    float: left;
+    margin-left: 0;
+    padding-left: 0.5vw;
+    padding-top: 0.2vw;
+}
+
+.opponentInfo {
+    background-color: rgb(255, 255, 255);
+    float: right;
+    width: 25%;
+    margin-right: 15%;
+}
+
+.neutralInfo {
+    background-color: rgb(255, 255, 255);
+    float: left;
+    width: 20%;
+    height: 5vw;
+}
+
+.opponentInfo * {
+    float: right;
+}
+
+.dateAndTime {
+    display: flex;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 5%;
+    text-align: center;
     font-size: 1vw;
 }
 
-.weekHighlights {
+.location {
+    display: flex;
+    padding-right: 32%;
+    margin-right: 0;
+    margin-top: 5%;
     text-align: center;
-    padding-top: 1vw;
-    border-collapse: collapse;
+    font-size: 1vw;
+    padding-left: 0;
 }
 
-#highlightVideo {
-    border: .2vw solid;
-    border-color: black;
-    border-radius: 2vw;
-    border-collapse: collapse;
+#stadium {
+    font-style: italic;
 }
-
-#highlightTitle {
-    padding-top: 2vw;
-    text-align: center;
-    font-family: 'Calibri';
-    background-color: white;
-    color: rgb(0, 0, 0);
-    font-weight: 900;
-    margin-bottom: 0;
-    border: .2vw solid;
-    border-bottom: 0;
-    border-color: black;
-    border-top-right-radius: 1vw;
-    border-top-left-radius: 1vw;
-    margin: 0;
-    padding: 0;
-    margin-left: 25%;
-    margin-right: 25%;
-}
-
 
 </style>
 
@@ -384,305 +321,40 @@ img {
 
   <section class="mainBody">
 
-    <div class="gameTitle">WEEK 9 - CAROLINA PANTHERS @ CINCINNATI BENGALS</div>
-
-
-    <div class="bengalsMVPS">
-        <div class="passingMVPb">
-            <div class="visual">
-                <img class="playerLogoB" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3915511.png&h=102&scale=crop&w=102">
-            </div>
-            <div class="playerInfo">
-                <div class="playerName">Joe Burrow</div>
-                <div class="playerPosNum">QB, #9</div>
-            </div>
-            <div class="gameStats">
-                <table class="playerTable">
-                    <tr class="headerStats">
-                        <th>C/ATT/INT</th>
-                        <th>YDS/AVG</th>
-                        <th>TD</th>
-                    </tr>
-                    <tr class="playerStats">
-                        <td>22/28/0</td>
-                        <td>206/7.4</td>
-                        <td>1</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="rushingMVPb">
-            <div class="visual">
-                <img class="playerLogoB" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3116385.png&h=102&scale=crop&w=102">
-            </div>
-            <div class="playerInfo">
-                <div class="playerName">Joe Mixon</div>
-                <div class="playerPosNum">RB, #28</div>
-            </div>
-            <div class="gameStats">
-                <table class="playerTable">
-                    <tr class="headerStats">
-                        <th>CAR/LONG</th>
-                        <th>YDS/AVG</th>
-                        <th>TD</th>
-                    </tr>
-                    <tr class="playerStats">
-                        <td>22/29</td>
-                        <td>153/7.0</td>
-                        <td>4</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="receivingMVPb">
-            <div class="visual">
-                <img class="playerLogoB" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4239993.png&h=102&scale=crop&w=102">
-            </div>
-            <div class="playerInfo">
-                <div class="playerName">Tee Higgins</div>
-                <div class="playerPosNum">WR, #85</div>
-            </div>
-            <div class="gameStats">
-                <table class="playerTable">
-                    <tr class="headerStats">
-                        <th>REC/LONG</th>
-                        <th>YDS/AVG</th>
-                        <th>TD</th>
-                    </tr>
-                    <tr class="playerStats">
-                        <td>7/17</td>
-                        <td>60/8.6</td>
-                        <td>0</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="defensiveMVPb">
-            <div class="visual">
-                <img class="playerLogoB" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3919512.png&h=102&scale=crop&w=102">
-            </div>
-            <div class="playerInfo">
-                <div class="playerName">Jessie Bates III</div>
-                <div class="playerPosNum">S, #30</div>
-            </div>
-            <div class="gameStats">
-                <table class="playerTable">
-                    <tr class="headerStats">
-                        <th>T/SOLO</th>
-                        <th>SACKS/TFL</th>
-                        <th>INT</th>
-                    </tr>
-                    <tr class="playerStats">
-                        <td>4/1</td>
-                        <td>0/1</td>
-                        <td>1</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div class="kickingMVPb">
-            <div class="visual">
-                <img class="playerLogoB" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4360234.png&h=102&scale=crop&w=102">
-            </div>
-            <div class="playerInfo">
-                <div class="playerName" id="adjust" style="font-size: 0.6vw">Evan McPherson</div>
-                <div class="playerPosNum">K, #2</div>
-            </div>
-            <div class="gameStats">
-                <table class="playerTable">
-                    <tr class="headerStats">
-                        <th>FG/FGA</th>
-                        <th>TPTS/XP</th>
-                        <th>LONG</th>
-                    </tr>
-                    <tr class="playerStats">
-                        <td>0/1</td>
-                        <td>6/6</td>
-                        <td>0</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-
-    <div class="awayMVPS">
-        <div class="passingMVPb">
-            <div class="gameStats">
-                <table class="playerTable">
-                    <tr class="headerStats">
-                        <th>TD</th>
-                        <th>YDS/AVG</th>
-                        <th>C/ATT/INT</th>
-                    </tr>
-                    <tr class="playerStats">
-                        <td>2</td>
-                        <td>155/7.8</td>
-                        <td>14/20/0</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="playerInfoOpp">
-                <div class="playerName">Baker Mayfield</div>
-                <div class="playerPosNum">QB, #6</div>
-            </div>
-            <div class="visual">
-                <img class="playerLogoO" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3052587.png&h=102&scale=crop&w=102">
-            </div>
-        </div>
-        <div class="rushingMVPb">
-            <div class="gameStats">
-                <table class="playerTable">
-                    <tr class="headerStats">
-                        <th>TD</th>
-                        <th>YDS/AVG</th>
-                        <th>CAR/LONG</th>
-                    </tr>
-                    <tr class="playerStats">
-                        <td>0</td>
-                        <td>23/3.3</td>
-                        <td>7/6</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="playerInfoOpp">
-                <div class="playerName">D'Onta Foreman</div>
-                <div class="playerPosNum">RB, #33</div>
-            </div>
-            <div class="visual">
-                <img class="playerLogoO" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/3125116.png&h=102&scale=crop&w=102">
-            </div>
-        </div>
-        <div class="receivingMVPb">
-            <div class="gameStats">
-                <table class="playerTable">
-                    <tr class="headerStats">
-                        <th>TD</th>
-                        <th>YDS/AVG</th>
-                        <th>REC/LONG</th>
-                    </tr>
-                    <tr class="playerStats">
-                        <td>1</td>
-                        <td>53/17.7</td>
-                        <td>3/21</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="playerInfoOpp">
-                <div class="playerName">Terrace Marshall Jr.</div>
-                <div class="playerPosNum">WR, #88</div>
-            </div>
-            <div class="visual">
-                <img class="playerLogoO" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4362630.png&h=102&scale=crop&w=102">
-            </div>
-        </div>
-        <div class="defensiveMVPb">
-            <div class="gameStats">
-                <table class="playerTable">
-                    <tr class="headerStats">
-                        <th>INT</th>
-                        <th>SACKS/TFL</th>
-                        <th>T/SOLO</th>
-                    </tr>
-                    <tr class="playerStats">
-                        <td>0</td>
-                        <td>0/0</td>
-                        <td>10/4</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="playerInfoOpp">
-                <div class="playerName">Shaq Thompson</div>
-                <div class="playerPosNum">LB, #7</div>
-            </div>
-            <div class="visual">
-                <img class="playerLogoO" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/2978313.png&h=102&scale=crop&w=102">
-            </div>
-        </div>
-        <div class="kickingMVPb">
-            <div class="gameStats">
-                <table class="playerTable">
-                    <tr class="headerStats">
-                        <th>LONG</th>
-                        <th>TPTS/XP</th>
-                        <th>FG/FGA</th>
-                    </tr>
-                    <tr class="playerStats">
-                        <td>0</td>
-                        <td>3/3</td>
-                        <td>0/0</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="playerInfoOpp">
-                <div class="playerName">Eddy Pineiro</div>
-                <div class="playerPosNum">K, #4</div>
-            </div>
-            <div class="visual">
-                <img class="playerLogoO" src="https://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/4034949.png&h=102&scale=crop&w=102">
-            </div>
-        </div>
-    </div>
-
-    <div class="leftSection">
-        <div class="blah">
-            <img class="bengalsLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
-        </div>
-    </div>
-
-
-
-    <div class="middleSection">
-        <div class="bengalsRec">
-            <ul class="homeStats">
+    <div class="upcomingGame">
+        <div class="bengalsInfo">
+            <div class="sideColorHome" style="background-color:#FB4F14"></div>
+            <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
+            <ul class="bengalsRec">
                 <li class="powerRank">#11</li>
-                <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png">
-                <li class="record">5-4 (prev. 4-4)</li>
-                <li class="teamName">Cincinnati Bengals</li>
+                <li class="league"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                <li class="record">5-4</li>
+            </ul>
+            <ul class="dateAndTime">
+                <li class="date">Sunday, November 20th</li>
+                <li class="time">4:25 PM - EST</li>
             </ul>
         </div>
-        <div class="scoreSection">
-            42 - 21
-        </div>
-        <div class="opponentRec">
-            <ul class="awayStats">
-                <li class="powerRank">#31</li>
-                <img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/National_Football_Conference_logo.svg/1200px-National_Football_Conference_logo.svg.png">
-                <li class="record">3-6 (prev. 3-5)</li>
-                <li class="teamName">Carolina Panthers</li>
+        <div class="neutralInfo">
+            <ul class="homeVsAway">
+                <li class="awayTeam">Cincinnati Bengals</li>
+                <li class="indicator">at</li>
+                <li class="homeTeam">Pittsburgh Steelers</li>
             </ul>
         </div>
-        <div class="quarterBreakdowns">
-            <div class="homeScores">
-                <div>7</div>
-                <div>28</div>
-                <div>7</div>
-                <div>0</div>
-                <div id="scoreTotalSub">42</div>
-            </div>
-            <div class="quarters">
-                <div>Q1</div>
-                <div>Q2</div>
-                <div>Q3</div>
-                <div>Q4</div>
-                <div class="attend">
-                    <div id="attendanceTag">ATTENDANCE</div>
-                    <div id="attendance">66,160</div>
-                </div>
-            </div>
-            <div class="awayScores">
-                <div>0</div>
-                <div>0</div>
-                <div>7</div>
-                <div>14</div>
-                <div id="scoreTotalSub">21</div>
-            </div>
+        <div class="opponentInfo">
+            <div class="sideColorAway" style="background-color:#000000"></div>
+            <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/PIT">
+            <ul class="awaysRec">
+                <li class="powerRankOpp">#25</li>
+                <li class="leagueOpp"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                <li class="recordOpp">3-6</li>
+            </ul>
+            <ul class="location">
+                <li>Location:</li>
+                <li id="stadium">Acrisure Stadium</li>
+            </ul>
         </div>
-    </div>
-
-
-
-    <div class="rightSection">
-        <img class="panthersLogo" src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CAR">
     </div>
 
   </section>
