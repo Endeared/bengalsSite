@@ -22,8 +22,10 @@
 + ~~attendance~~
 
 ### schedule (schedule.html) - ***IN PROGRESS***
-+ contains past games (with dropdowns for scores / stats)
-+ contains future games
++ ~~contains upcoming game~~
++ contains past games
++ dropdown menus for past games (player stats)
++ ~~contains future games past upcoming game~~
 
 ### advanced team stats (inDepth.html) - ***NOT STARTED***
 + a bunch of stuff (turnovers / takeaways, defensive scoring, offensive scoring, +/-, etc)
