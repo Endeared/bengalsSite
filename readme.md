@@ -25,14 +25,3 @@
 + ~~contains upcoming game~~
 + ~~contains past games~~
 + ~~contains future games past upcoming game~~
-
-### advanced team stats (inDepth.html) - ***IN PROGRESS***
-+ team info section (name, logo)
-+ turnovers / takeaways
-+ defensive scoring
-+ offensive scoring
-+ score +/-
-+ 3rd down %
-+ pass yards total / avg
-+ rush yards total / avg
-+ total yards / avg
