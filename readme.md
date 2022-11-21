@@ -21,11 +21,18 @@
 + ~~quarter by quarter breakdown of score~~
 + ~~attendance~~
 
-### schedule (schedule.html) - ***IN PROGRESS***
+### ~~schedule (schedule.html)~~ - ***DONE***
 + ~~contains upcoming game~~
-+ contains past games
-+ dropdown menus for past games (player stats)
++ ~~contains past games~~
 + ~~contains future games past upcoming game~~
 
-### advanced team stats (inDepth.html) - ***NOT STARTED***
-+ a bunch of stuff (turnovers / takeaways, defensive scoring, offensive scoring, +/-, etc)
+### advanced team stats (inDepth.html) - ***IN PROGRESS***
++ team info section (name, logo)
++ turnovers / takeaways
++ defensive scoring
++ offensive scoring
++ score +/-
++ 3rd down %
++ pass yards total / avg
++ rush yards total / avg
++ total yards / avg
