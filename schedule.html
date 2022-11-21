@@ -7,311 +7,11 @@
     <meta name="viewport" content="initial-scale=0">
 	<title>Recent</title>
 	<link rel="icon" type="image/x-icon" href="https://endeared.github.io/bengalsSite/favicon.ico">
-    <link href="weekInReviewStyle.css" rel="stylesheet" type="text/css">
+    <link href="scheduleStyle.css" rel="stylesheet" type="text/css">
     <meta name="keywords" content="">
     <meta name="description" content="Bengals Website">
     <meta name="author" content="Ross Hamey">
   </head>
-
-<style>
-
-body {
-    background-color: rgb(39, 39, 39);
-    padding-bottom: 50vw;
-    position: absolute;
-    width: 100vw;
-}
-
-h1 {
-    font-family: "Calibri";
-    font-size: 10vw;
-    position: relative;
-    text-align: center;
-    color: white;
-    background: url("https://i.etsystatic.com/15011367/r/il/6e81bc/2260991376/il_fullxfull.2260991376_r6zl.jpg");
-    background-size: 20%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: pattern 20s ease-in-out 1s infinite;
-    margin-bottom: 0vw;
-    margin-top: 0vw;
-}
-
-.credits {
-    text-align: center;
-    font-size: 2vw;
-    margin-top: 5vw;
-}
-
-@keyframes pattern {
-    0% {
-        background-position: center 0;
-    }
-
-    50% {
-        background-position: center 100%;
-    }
-
-    100% {
-        background-position: center 0;
-    }
-}
-
-.pages ul {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.pages * {
-    color: rgb(255, 255, 255);
-    font-family: 'Calibri';
-    list-style-type: none;
-    text-decoration: none;
-}
-
-.pages {
-    border-radius: 1vw;
-    border: 0.2vw solid;
-    border-color: black;
-    margin: 0 auto;
-    width: 65vw;
-    padding-left: 0vw;
-    padding-right: 0vw;
-    left: 0vw;
-    right: 0vw;
-    background-color: #ff5e00;
-    background: url("https://i.etsystatic.com/15011367/r/il/6e81bc/2260991376/il_fullxfull.2260991376_r6zl.jpg");
-    background-size: 20%;
-    animation: pattern 20s ease-in-out 1s infinite;
-}
-
-.pages li {
-    padding-right: 5vw;
-    padding-left: 5vw;
-    font-size: 1vw;
-    font-weight: 900;
-}
-
-.hover:hover {
-    transform: scale(1.5);
-    transition: transform 0.23s ease-in;
-}
-
-.hover:not(:hover) {
-    transform: scale(1);
-    transition: transform 0.23s ease-in;
-}
-
-.bottom {
-    font-weight: 900;
-    font-size: 1vw;
-    font-family: 'Calibri';
-    color: white;
-    margin-top: 0vw;
-    margin-bottom: 0vw;
-    margin-right: 1vw;
-}
-
-#ghLogo,
-#gmailLogo {
-    width: 1vw;
-    height: auto;
-    display: inline;
-    vertical-align: middle;
-    margin-left: 0.1vw;
-}
-
-#email,
-#ghUser {
-    text-decoration: none;
-    color: white;
-}
-
-#email:hover,
-#ghUser:hover {
-    color: grey;
-    transition: color 0.5s;
-}
-
-#email:not(:hover),
-#ghUser:not(:hover) {
-    color: white;
-    transition: color 0.5s;
-}
-
-footer {
-    position: absolute;
-    width: 100vw;
-    bottom: 0vw;
-    height: 0vw;
-}
-
-img {
-    width: 2vw;
-    height: auto;
-}
-
-.mainBody {
-    display: inline-block;
-    width: 100%;
-    overflow: hidden;
-    background-color: none;
-    font-family: 'Calibri'
-}
-
-.upcomingGame {
-    background-color: rgb(255, 255, 255);
-    margin-top: 2%;
-    margin-bottom: 8%;
-}
-
-.paddingGames {
-    margin-top: 0.7%;
-    width: 5vw;
-    height: 5vw;
-}
-
-.bengalsInfo img {
-    float: left;
-    height: 5vw;
-    width: auto;
-}
-
-.opponentInfo img {
-    float: right;
-    height: 5vw;
-    width: auto;
-}
-
-.sideColorHome {
-    width: 2vw;
-    height: 5vw;
-    float: left;
-    box-shadow: 0px 0px 10px 3px #FB4F14;
-}
-
-.sideColorAway {
-    width: 2vw;
-    height: 5vw;
-    float: right;
-    box-shadow: 0px 0px 10px 3px #000000;
-}
-
-.bengalsInfo {
-    background-color: white;
-    float: left;
-    width: 25%;
-    margin-left: 15%;
-    border-spacing: 0;
-}
-
-.opponentInfo {
-    border-spacing: 0;
-}
-
-.bengalsInfo ul *, .opponentInfo ul * {
-    list-style: none;
-    text-decoration: none;
-    color: black;
-}
-
-.neutralInfo ul * {
-    list-style: none;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    font-weight: 900;
-    margin-right: 10%;
-}
-
-.indicator {
-    font-size: 0.7vw;
-}
-
-.homeTeam, .awayTeam {
-    font-size: 1.02vw;
-}
-
-.league img, .leagueOpp img {
-    width: 1.5vw;
-    height: auto;
-}
-
-.powerRank, .powerRankOpp {
-    font-weight: 900;
-    font-family: 'Calibri';
-    font-size: 0.7vw;
-    color: black;
-}
-
-.record, .recordOpp {
-    font-weight: 900;
-    font-family: 'Calibri';
-    font-size: 0.7vw;
-    color: grey;
-}
-
-.recordOpp, .powerRankOpp, .leagueOpp {
-    text-align: right;
-    float: right;
-}
-
-
-.bengalsInfo *, .opponentInfo * {
-    display: flex;
-    flex-direction: column;
-}
-
-.bengalsRec, .awaysRec {
-    float: left;
-    margin-left: 0;
-    padding-left: 0.5vw;
-    padding-top: 0.2vw;
-}
-
-.opponentInfo {
-    background-color: rgb(255, 255, 255);
-    float: right;
-    width: 25%;
-    margin-right: 15%;
-}
-
-.neutralInfo {
-    background-color: rgb(255, 255, 255);
-    float: left;
-    width: 20%;
-    height: 5vw;
-}
-
-.opponentInfo * {
-    float: right;
-}
-
-.dateAndTime {
-    display: flex;
-    padding-left: 0;
-    margin-left: 0;
-    margin-top: 5%;
-    text-align: center;
-    font-size: 1vw;
-}
-
-.location {
-    display: flex;
-    padding-right: 32%;
-    margin-right: 0;
-    margin-top: 5%;
-    text-align: center;
-    font-size: 1vw;
-    padding-left: 0;
-}
-
-#stadium {
-    font-style: italic;
-}
-
-</style>
 
 <body>
 
@@ -623,6 +323,379 @@ img {
                 </ul>
             </div>
         </div>
+
+
+
+        <div class="pastGames">
+
+            <div class="paddingGames"></div>
+            <div class="futureContainer">
+                <div class="bengalsInfo">
+                    <div class="sideColorHome" style="background-color:#FB4F14"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
+                    <ul class="bengalsRec">
+                        <li class="powerRank">#11</li>
+                        <li class="league"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="record">5-4</li>
+                    </ul>
+                    <div class="homeScorePast">
+                        <div class="lose">
+                            20
+                        </div>
+                    </div>
+                </div>
+                <div class="neutralInfo">
+                    <ul class="homeVsAway">
+                        <li class="awayTeam">Pittsburgh Steelers</li>
+                        <li class="indicator">at</li>
+                        <li class="homeTeam">Cincinnati Bengals</li>
+                    </ul>
+                </div>
+                <div class="opponentInfo">
+                    <div class="sideColorAway" style="background-color:#000000; box-shadow: 0px 0px 10px 3px #000000;"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/PIT">
+                    <ul class="awaysRec">
+                        <li class="powerRankOpp">#25</li>
+                        <li class="leagueOpp"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="recordOpp">3-6</li>
+                    </ul>
+                    <div class="awayScorePast">
+                        <div class="win">
+                            23
+                        </div>
+                    </div>
+                </div>
+                <div class="bengalsInfo-content">
+                </div>
+            </div>
+
+            <div class="paddingGames"></div>
+            <div class="futureContainer">
+                <div class="bengalsInfo">
+                    <div class="sideColorHome" style="background-color:#FB4F14"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
+                    <ul class="bengalsRec">
+                        <li class="powerRank">#11</li>
+                        <li class="league"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="record">5-4</li>
+                    </ul>
+                    <div class="homeScorePast">
+                        <div class="lose">
+                            17
+                        </div>
+                    </div>
+                </div>
+                <div class="neutralInfo">
+                    <ul class="homeVsAway">
+                        <li class="awayTeam">Cincinnati Bengals</li>
+                        <li class="indicator">at</li>
+                        <li class="homeTeam">Dallas Cowboys</li>
+                    </ul>
+                </div>
+                <div class="opponentInfo">
+                    <div class="sideColorAway" style="background-color:#002244; box-shadow: 0px 0px 10px 3px #002244;"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/DAL">
+                    <ul class="awaysRec">
+                        <li class="powerRankOpp">#8</li>
+                        <li class="leagueOpp"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/National_Football_Conference_logo.svg/1200px-National_Football_Conference_logo.svg.png"></li>
+                        <li class="recordOpp">6-3</li>
+                    </ul>
+                    <div class="awayScorePast">
+                        <div class="win">
+                            20
+                        </div>
+                    </div>
+                </div>
+                <div class="bengalsInfo-content">
+                </div>
+            </div>
+
+            <div class="paddingGames"></div>
+            <div class="futureContainer">
+                <div class="bengalsInfo">
+                    <div class="sideColorHome" style="background-color:#FB4F14"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
+                    <ul class="bengalsRec">
+                        <li class="powerRank">#11</li>
+                        <li class="league"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="record">5-4</li>
+                    </ul>
+                    <div class="homeScorePast">
+                        <div class="win">
+                            27
+                        </div>
+                    </div>
+                </div>
+                <div class="neutralInfo">
+                    <ul class="homeVsAway">
+                        <li class="awayTeam">Cincinnati Bengals</li>
+                        <li class="indicator">at</li>
+                        <li class="homeTeam">New York Jets</li>
+                    </ul>
+                </div>
+                <div class="opponentInfo">
+                    <div class="sideColorAway" style="background-color:#003F2D; box-shadow: 0px 0px 10px 3px #003F2D;"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/NYJ">
+                    <ul class="awaysRec">
+                        <li class="powerRankOpp">#10</li>
+                        <li class="leagueOpp"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="recordOpp">6-3</li>
+                    </ul>
+                    <div class="awayScorePast">
+                        <div class="lose">
+                            12
+                        </div>
+                    </div>
+                </div>
+                <div class="bengalsInfo-content">
+                </div>
+            </div>
+
+            <div class="paddingGames"></div>
+            <div class="futureContainer">
+                <div class="bengalsInfo">
+                    <div class="sideColorHome" style="background-color:#FB4F14"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
+                    <ul class="bengalsRec">
+                        <li class="powerRank">#11</li>
+                        <li class="league"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="record">5-4</li>
+                    </ul>
+                    <div class="homeScorePast">
+                        <div class="win">
+                            27
+                        </div>
+                    </div>
+                </div>
+                <div class="neutralInfo">
+                    <ul class="homeVsAway">
+                        <li class="awayTeam">Miami Dolphins</li>
+                        <li class="indicator">at</li>
+                        <li class="homeTeam">Cincinnati Bengals</li>
+                    </ul>
+                </div>
+                <div class="opponentInfo">
+                    <div class="sideColorAway" style="background-color:#008E97; box-shadow: 0px 0px 10px 3px #008E97;"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/MIA">
+                    <ul class="awaysRec">
+                        <li class="powerRankOpp">#4</li>
+                        <li class="leagueOpp"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="recordOpp">7-3</li>
+                    </ul>
+                    <div class="awayScorePast">
+                        <div class="lose">
+                            15
+                        </div>
+                    </div>
+                </div>
+                <div class="bengalsInfo-content">
+                </div>
+            </div>
+
+            <div class="paddingGames"></div>
+            <div class="futureContainer">
+                <div class="bengalsInfo">
+                    <div class="sideColorHome" style="background-color:#FB4F14"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
+                    <ul class="bengalsRec">
+                        <li class="powerRank">#11</li>
+                        <li class="league"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="record">5-4</li>
+                    </ul>
+                    <div class="homeScorePast">
+                        <div class="lose">
+                            17
+                        </div>
+                    </div>
+                </div>
+                <div class="neutralInfo">
+                    <ul class="homeVsAway">
+                        <li class="awayTeam">Cincinnati Bengals</li>
+                        <li class="indicator">at</li>
+                        <li class="homeTeam">Baltimore Ravens</li>
+                    </ul>
+                </div>
+                <div class="opponentInfo">
+                    <div class="sideColorAway" style="background-color:#241773; box-shadow: 0px 0px 10px 3px #241773;"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/BAL">
+                    <ul class="awaysRec">
+                        <li class="powerRankOpp">#6</li>
+                        <li class="leagueOpp"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="recordOpp">6-3</li>
+                    </ul>
+                    <div class="awayScorePast">
+                        <div class="win">
+                            19
+                        </div>
+                    </div>
+                </div>
+                <div class="bengalsInfo-content">
+                </div>
+            </div>
+
+            <div class="paddingGames"></div>
+            <div class="futureContainer">
+                <div class="bengalsInfo">
+                    <div class="sideColorHome" style="background-color:#FB4F14"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
+                    <ul class="bengalsRec">
+                        <li class="powerRank">#11</li>
+                        <li class="league"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="record">5-4</li>
+                    </ul>
+                    <div class="homeScorePast">
+                        <div class="win">
+                            30
+                        </div>
+                    </div>
+                </div>
+                <div class="neutralInfo">
+                    <ul class="homeVsAway">
+                        <li class="awayTeam">Cincinnati Bengals</li>
+                        <li class="indicator">at</li>
+                        <li class="homeTeam">New Orleans Saints</li>
+                    </ul>
+                </div>
+                <div class="opponentInfo">
+                    <div class="sideColorAway" style="background-color:#D3BC8D; box-shadow: 0px 0px 10px 3px #D3BC8D;"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/NO">
+                    <ul class="awaysRec">
+                        <li class="powerRankOpp">#23</li>
+                        <li class="leagueOpp"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/National_Football_Conference_logo.svg/1200px-National_Football_Conference_logo.svg.png"></li>
+                        <li class="recordOpp">3-7</li>
+                    </ul>
+                    <div class="awayScorePast">
+                        <div class="lose">
+                            26
+                        </div>
+                    </div>
+                </div>
+                <div class="bengalsInfo-content">
+                </div>
+            </div>
+
+            <div class="paddingGames"></div>
+            <div class="futureContainer">
+                <div class="bengalsInfo">
+                    <div class="sideColorHome" style="background-color:#FB4F14"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
+                    <ul class="bengalsRec">
+                        <li class="powerRank">#11</li>
+                        <li class="league"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="record">5-4</li>
+                    </ul>
+                    <div class="homeScorePast">
+                        <div class="win">
+                            35
+                        </div>
+                    </div>
+                </div>
+                <div class="neutralInfo">
+                    <ul class="homeVsAway">
+                        <li class="awayTeam">Atlanta Falcons</li>
+                        <li class="indicator">at</li>
+                        <li class="homeTeam">Cincinnati Bengals</li>
+                    </ul>
+                </div>
+                <div class="opponentInfo">
+                    <div class="sideColorAway" style="background-color:#A71930; box-shadow: 0px 0px 10px 3px #A71930;"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/ATL">
+                    <ul class="awaysRec">
+                        <li class="powerRankOpp">#22</li>
+                        <li class="leagueOpp"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/National_Football_Conference_logo.svg/1200px-National_Football_Conference_logo.svg.png"></li>
+                        <li class="recordOpp">4-6</li>
+                    </ul>
+                    <div class="awayScorePast">
+                        <div class="lose">
+                            17
+                        </div>
+                    </div>
+                </div>
+                <div class="bengalsInfo-content">
+                </div>
+            </div>
+
+            <div class="paddingGames"></div>
+            <div class="futureContainer">
+                <div class="bengalsInfo">
+                    <div class="sideColorHome" style="background-color:#FB4F14"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
+                    <ul class="bengalsRec">
+                        <li class="powerRank">#11</li>
+                        <li class="league"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="record">5-4</li>
+                    </ul>
+                    <div class="homeScorePast">
+                        <div class="lose">
+                            13
+                        </div>
+                    </div>
+                </div>
+                <div class="neutralInfo">
+                    <ul class="homeVsAway">
+                        <li class="awayTeam">Cincinnati Bengals</li>
+                        <li class="indicator">at</li>
+                        <li class="homeTeam">Cleveland Browns</li>
+                    </ul>
+                </div>
+                <div class="opponentInfo">
+                    <div class="sideColorAway" style="background-color:#FF3C00; box-shadow: 0px 0px 10px 3px #FF3C00;"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CLE">
+                    <ul class="awaysRec">
+                        <li class="powerRankOpp">#24</li>
+                        <li class="leagueOpp"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="recordOpp">3-6</li>
+                    </ul>
+                    <div class="awayScorePast">
+                        <div class="win">
+                            32
+                        </div>
+                    </div>
+                </div>
+                <div class="bengalsInfo-content">
+                </div>
+            </div>
+
+            <div class="paddingGames"></div>
+            <div class="futureContainer">
+                <div class="bengalsInfo">
+                    <div class="sideColorHome" style="background-color:#FB4F14"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CIN">
+                    <ul class="bengalsRec">
+                        <li class="powerRank">#11</li>
+                        <li class="league"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/American_Football_Conference_logo.svg/1200px-American_Football_Conference_logo.svg.png"></li>
+                        <li class="record">5-4</li>
+                    </ul>
+                    <div class="homeScorePast">
+                        <div class="win">
+                            42
+                        </div>
+                    </div>
+                </div>
+                <div class="neutralInfo">
+                    <ul class="homeVsAway">
+                        <li class="awayTeam">Carolina Panthers</li>
+                        <li class="indicator">at</li>
+                        <li class="homeTeam">Cincinnati Bengals</li>
+                    </ul>
+                </div>
+                <div class="opponentInfo">
+                    <div class="sideColorAway" style="background-color:#0085CA; box-shadow: 0px 0px 10px 3px #0085CA;"></div>
+                    <img src="https://static.www.nfl.com/t_thumb_squared/f_auto/league/api/clubs/logos/CAR">
+                    <ul class="awaysRec">
+                        <li class="powerRankOpp">#31</li>
+                        <li class="leagueOpp"><img class="leagueLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/National_Football_Conference_logo.svg/1200px-National_Football_Conference_logo.svg.png"></li>
+                        <li class="recordOpp">3-7</li>
+                    </ul>
+                    <div class="awayScorePast">
+                        <div class="lose">
+                            21
+                        </div>
+                    </div>
+                </div>
+                <div class="bengalsInfo-content">
+                </div>
+            </div>
 
     </div>
 
