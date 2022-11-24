@@ -1,5 +1,6 @@
 # project for app academy course
 
+i will continue to update these pages over time based on changes in games / schedules.
 
 ## to do:
 
